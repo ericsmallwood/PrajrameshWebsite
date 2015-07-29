@@ -1,0 +1,26 @@
+.header{
+    height: 12vh;
+    width: 100%;
+    color: white;
+    background: linear-gradient(to right, #4B2E83, #330033);
+    position: relative;
+}
+
+.logoText{
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.logoContainer{
+}
+
+.headerNavContainer{
+    float: right;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
