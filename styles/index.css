@@ -1,21 +1,27 @@
+/***** General *****/
+.fillContainer{
+    height: 100%
+}
+
+/***** Header Section *****/
 .header{
-    height: 12vh;
     width: 100%;
     color: white;
-    background: linear-gradient(to right, #4B2E83, #330033);
-    position: relative;
+    background: #4B2E83;
 }
 
 .logoText{
     font-size: xx-large;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    color: #ffffff;
+    padding: 10px;
 }
 
 .logoContainer{
+    float: left;
+    padding: 15px 15px;
+    font-size: 2px;
 }
 
 .headerNavContainer{
@@ -23,4 +29,159 @@
     display: flex;
     align-items: center;
     height: 100%;
+    width: 20%;
+}
+.followUsContainer{
+    float: right;
+}
+
+.followUsIcon{
+    padding: 10px;
+}
+
+.searchContainer{
+    text-align:center;
+
+}
+.searchIcon{
+    padding: 10px;
+}
+
+@media(max-width: 900px){
+
+    .followUsIcon{
+        font-size: medium;
+        padding: 2px;
+    }
+}
+
+/***** Navigation Section *****/
+.navSection{
+    font-size: large;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+.navbar-collapse{
+    text-align: center;
+}
+
+.navbar-nav{
+    display:inline-block;
+    float: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #4B2E83;
+    transition: all 500ms linear;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: orangered;
+}
+
+@media(max-width: 768px){
+    .navbar-nav{
+        text-align: left;
+        float: left;
+        font-size:x-large;
+    }
+
+    .navLink{
+        font-size: medium;
+    }
+}
+.navbar .nav > li+li { border-left: 2px solid #696969 }
+
+/***** Image Carosel *****/
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+.item:nth-child(1) {
+    background: url("../images/people-q-g-1920-1920-9.jpg") no-repeat center fixed;
+    background-size: 100%;
+    height: 40vh;
+}
+
+.item:nth-child(2) {
+    background: rgba(0, 0, 0, 0.5) url("../images/Alumni_Hall_1889_Sun.png") no-repeat fixed center;
+    height: 40vh;
+    background-size: 100%;
+}
+
+.item:nth-child(3) {
+    background: url("../images/Group-of-Students.jpg")  no-repeat center fixed;
+    height: 40vh;
+    background-size: 100%;
+}
+
+.bannerContainer{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+    left: 0;
+}
+
+.bannerContent {
+    margin: 20px;
+    text-align: center; }
+
+/***** Flag Carosel *****/
+.flagSection{
+    background: lightslategray url('../images/earthmap10k.png') no-repeat center;
+}
+.bx-wrapper{
+    background-color: rgba(255,255,255, 0.5);
+    border: 0px;
+    padding:  0 10px 10px;
+    box-shadow: 0 0 0px #ccc;
+}
+.flagSliderContainer{
+    background-color: lightslategray;
+    width: 100%
+}
+
+.bxPrevOverride{
+    left: -10%
+}
+
+.bxNextOverrod{
+    right: -10%;
 }
