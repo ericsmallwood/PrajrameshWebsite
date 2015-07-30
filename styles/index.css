@@ -1,6 +1,6 @@
 /***** General *****/
 .fillContainer{
-    height: 100%
+    height: 100%;
 }
 
 /***** Header Section *****/
@@ -130,19 +130,19 @@
 }
 
 .item:nth-child(1) {
-    background: url("../images/people-q-g-1920-1920-9.jpg") no-repeat center fixed;
+    background: url("../images/people-q-g-1920-1920-9.jpg") no-repeat  center;
     background-size: 100%;
     height: 40vh;
 }
 
 .item:nth-child(2) {
-    background: rgba(0, 0, 0, 0.5) url("../images/schoolhall.jpg") no-repeat fixed center;
+    background: rgba(0, 0, 0, 0.5) url("../images/schoolhall.jpg") no-repeat center;
     height: 40vh;
     background-size: 100%;
 }
 
 .item:nth-child(3) {
-    background: url("../images/Group-of-Students.jpg")  no-repeat center fixed;
+    background: url("../images/Group-of-Students.jpg")  no-repeat center;
     height: 40vh;
     background-size: 100%;
 }
@@ -165,6 +165,7 @@
 
 /***** Flag Carosel *****/
 .flagSection{
+    border-top: darkslategrey solid 2px;
     background: lightslategray url('../images/earthmap.jpg') no-repeat center;
 }
 .bx-wrapper{
@@ -185,3 +186,68 @@
 .bxNextOverrod{
     right: -10%;
 }
+
+/**** Study in India / Study Abroad Sections
+
+/***** Body links section *****/
+.linkSubsectionsContainer{
+    background-color: white;
+    box-shadow: 1px 1px 1px dimgrey;
+    margin: 10px;
+    border-radius: 3px;
+    text-align: left;
+}
+
+.linkSubsectionTitle{
+    color: #4B2E83;
+    font-weight: bold;
+}
+
+hr.linkSubsectionTitle{
+    background-color: orangered;
+    height:5px;
+    margin-top:2px;
+}
+
+.linkTypeHeader{
+    font-weight: bold;
+}
+
+.bodyLinkList ul li{
+    display: inline;
+}
+
+.bodyLinkList > li+li {
+    border-left: 2px solid #696969;
+}
+
+.linksContainer{
+    padding-left: 0;
+}
+
+.linkMoreButton{
+    text-align: right;
+    padding: 5px;
+}
+hr.linkSubsectionBody{
+    background-color: gray;
+    height:1px;
+    margin-top:1px;
+    padding: 0
+}
+
+.articleRow{
+    margin: 8px;
+}
+.articlesAndUpdatesLink{
+    padding: 0;
+    font-size: small;
+}
+
+.topExamLinks{
+    font-size: small;
+    width: 100%
+}
+
+
+
