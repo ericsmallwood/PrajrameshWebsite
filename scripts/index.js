@@ -6,7 +6,11 @@ $('.bxslider').bxSlider({
     maxSlides: 4,
     slideWidth: 100,
     slideMargin: 120,
-    moveSlides: 1
+    moveSlides: 1,
+    speed: 200,
+    auto: true,
+    pause: 2000
+
 });
 
 $('.bx-prev').css("left", "-10%");

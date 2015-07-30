@@ -164,7 +164,17 @@
     text-align: center; }
 
 /***** Flag Carosel *****/
+.flagSection{
+    background: lightslategray url('../images/earthmap10k.png') no-repeat center;
+}
+.bx-wrapper{
+    background-color: rgba(255,255,255, 0.5);
+    border: 0px;
+    padding:  0 10px 10px;
+    box-shadow: 0 0 0px #ccc;
+}
 .flagSliderContainer{
+    background-color: lightslategray;
     width: 100%
 }
 
