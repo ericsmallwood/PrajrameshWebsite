@@ -1,3 +1,8 @@
+/***** General *****/
+.fillContainer{
+    height: 100%
+}
+
 /***** Header Section *****/
 .header{
     width: 100%;
@@ -50,10 +55,10 @@
     }
 }
 
-
 /***** Navigation Section *****/
 .navSection{
-    font-size: xx-large;
+    font-size: large;
+    font-weight: bolder;
     margin-bottom: 0;
 }
 .navbar-collapse{
@@ -85,10 +90,9 @@
         font-size: medium;
     }
 }
-li+li { border-left: 2px solid #696969 }
+.navbar .nav > li+li { border-left: 2px solid #696969 }
 
 /***** Image Carosel *****/
-
 .carousel-fade .carousel-inner .item {
     opacity: 0;
     -webkit-transition-property: opacity;
@@ -126,7 +130,7 @@ li+li { border-left: 2px solid #696969 }
 }
 
 .item:nth-child(1) {
-    background: url("http://lorempixel.com/output/people-q-g-1920-1920-9.jpg") no-repeat center fixed;
+    background: url("../images/people-q-g-1920-1920-9.jpg") no-repeat center fixed;
     background-size: 100%;
     height: 40vh;
 }
@@ -138,23 +142,36 @@ li+li { border-left: 2px solid #696969 }
 }
 
 .item:nth-child(3) {
-    background: url("http://lorempixel.com/output/people-q-c-1920-1920-9.jpg")  no-repeat center fixed;
+    background: url("../images/Group-of-Students.jpg")  no-repeat center fixed;
     height: 40vh;
     background-size: 100%;
 }
 
-.banner-message{
-    width: 100px;
-    height: 100px;
+.bannerContainer{
+    width: 100%;
+    height: auto;
     border-radius: 10px;
     background-color: rgba(255,255,255,0.5);
-    color: orangered;
-    text-align: center
+    color: black;
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+    left: 0;
 }
 
-.center {
-    margin: 3px auto;
+.bannerContent {
+    margin: 20px;
     text-align: center; }
 
+/***** Flag Carosel *****/
+.flagSliderContainer{
+    width: 100%
+}
 
+.bxPrevOverride{
+    left: -10%
+}
 
+.bxNextOverrod{
+    right: -10%;
+}
