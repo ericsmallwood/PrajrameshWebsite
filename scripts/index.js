@@ -15,3 +15,12 @@ $('.bxslider').bxSlider({
 
 $('.bx-prev').css("left", "-10%");
 $('.bx-next').css("right", "-10%");
+
+$('#searchIcon').on('click', function(){
+    var searchbarSection = $('.searchbarSection');
+    if(searchbarSection.hasClass('hide-section')) {
+        searchbarSection.removeClass('hide-section');
+    }else{
+        searchbarSection.addClass('hide-section');
+    }
+});

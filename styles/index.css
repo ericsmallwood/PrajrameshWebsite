@@ -2,6 +2,14 @@
 .fillContainer{
     height: 100%;
 }
+/***** Searchbar Section *****/
+.searchbarSection{
+    padding:20px;
+}
+
+.hide-section{
+    display: none;
+}
 
 /***** Header Section *****/
 .header{
@@ -45,6 +53,7 @@
 }
 .searchIcon{
     padding: 10px;
+    cursor: pointer;
 }
 
 @media(max-width: 900px){
@@ -202,8 +211,26 @@
     right: -10%;
 }
 
-/**** Study in India / Study Abroad Sections
+/**** Study in India / Study Abroad Sections *****/
+#indiaAndAbroad{
+    /*border-top: darkslategrey solid 2px;*/
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.abroadFlags{
+    margin: 10px;
+    border: 1px #4B2E83 solid;
+}
+.studyLocationContainer{
+    text-align: center;
+    background-color: #816DA8;
+    color: #ffffff;
+}
+
+.indiaAbroadSearchButtonContainer{
+    text-align: right;
+}
 /***** Body links section *****/
 .linkSubsectionsContainer{
     background-color: white;
