@@ -56,12 +56,20 @@
     cursor: pointer;
 }
 
+.loginRegisterContainer{
+    text-align: right;
+    font-size: medium;
+    padding-top: 10px;
+    padding-right: 25px;
+}
+
 @media(max-width: 900px){
 
     .followUsIcon{
         font-size: medium;
         padding: 2px;
     }
+
 }
 
 /***** Navigation Section *****/
@@ -226,6 +234,7 @@
     text-align: center;
     background-color: #816DA8;
     color: #ffffff;
+    border-radius: 5px;
 }
 
 .indiaAbroadSearchButtonContainer{
