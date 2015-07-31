@@ -64,12 +64,10 @@
 }
 
 @media(max-width: 900px){
-
     .followUsIcon{
         font-size: medium;
         padding: 2px;
     }
-
 }
 
 /***** Navigation Section *****/
@@ -310,6 +308,21 @@ hr.linkSubsectionBody{
     height:50px;
     width: auto;
 
+}
+
+.joinUsHeaders{
+    color: #696969;
+    font-weight: bold;
+    font-size: small
+}
+
+/***** Top Queries *****/
+.topQueriesTitle{
+    height:50px;
+    background-color: #4B2E83;
+    color: white;
+    font-size: xx-large;
+    margin-bottom: 75px;
 }
 
 /***** Footer *****/
