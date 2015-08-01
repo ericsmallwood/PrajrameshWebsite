@@ -48,3 +48,19 @@ $('#searchIcon').on('click', function(){
         searchbarSection.addClass('hide-section');
     }
 });
+
+//jstree-siteMap
+$(function () { $('.siteMap').jstree();
+
+    $('.siteMap').on("changed.jstree", function (e, data) {
+        console.log(data.selected);
+    });
+
+    $('button').on('click', function () {
+        $('.siteMap').jstree(true).select_node('child_node_1');
+        $('.siteMap').jstree('select_node', 'child_node_1');
+        $.jstree.reference('.siteMap').select_node('child_node_1');
+    });
+
+});
+

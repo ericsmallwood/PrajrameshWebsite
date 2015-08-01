@@ -373,8 +373,9 @@ hr.linkSubsectionBody{
 
 /***** Footer *****/
 .footer{
-    background-color: #000000;
-    height: 100px;
+    background-color: lightseagreen;
+    color: bisque;
+    padding: 75px;
 }
 
 
