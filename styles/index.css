@@ -2,6 +2,13 @@
 html, body{
     height: 100%
 }
+
+.mainSection{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
 .fillContainer{
     height: 100%;
 }
@@ -184,6 +191,16 @@ html, body{
     background: url('../images/college-education.jpg') center no-repeat;
 }
 
+/***** Ads Across *****/
+.adAcrossImg{
+    border: 1px #816DA8 solid;
+}
+
+#adsAcross > .container-fluid > .row > .col-md-12 > .bx-wrapper{
+    overflow: hidden;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
 
 /***** Flag Carousel *****/
 .flagSection{
