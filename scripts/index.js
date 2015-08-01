@@ -28,6 +28,7 @@ $('#flagsSlider').bxSlider({
 $('#articleSlider').bxSlider({
     minSlides: 3,
     maxSlides: 3,
+    slideMargin: 15,
     mode: 'vertical',
     moveSlides: 1,
     speed: 200,
