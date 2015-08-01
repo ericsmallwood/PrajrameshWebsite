@@ -1,6 +1,13 @@
 /***** General *****/
-.fillContainer{
+html, body{
     height: 100%
+}
+.fillContainer{
+    height: 100%;
+}
+/***** Searchbar Section *****/
+.searchbarSection{
+    padding:20px;
 }
 
 /***** Header Section *****/
@@ -39,21 +46,14 @@
     padding: 10px;
 }
 
-.searchContainer{
-    text-align:center;
-
+.loginRegisterContainer{
+    text-align: right;
+    font-size: medium;
+    padding-top: 10px;
+    padding-right: 25px;
 }
-.searchIcon{
-    padding: 10px;
-}
 
-@media(max-width: 900px){
 
-    .followUsIcon{
-        font-size: medium;
-        padding: 2px;
-    }
-}
 
 /***** Navigation Section *****/
 .navSection{
@@ -130,42 +130,64 @@
 }
 
 .item:nth-child(1) {
-    background: url("../images/people-q-g-1920-1920-9.jpg") no-repeat center fixed;
+    background: url("../images/people-q-g-1920-1920-9.jpg") no-repeat  center;
     background-size: 100%;
     height: 40vh;
 }
 
 .item:nth-child(2) {
-    background: rgba(0, 0, 0, 0.5) url("../images/Alumni_Hall_1889_Sun.png") no-repeat fixed center;
+    background: rgba(0, 0, 0, 0.5) url("../images/schoolhall.jpg") no-repeat center;
     height: 40vh;
     background-size: 100%;
 }
 
 .item:nth-child(3) {
-    background: url("../images/Group-of-Students.jpg")  no-repeat center fixed;
+    background: url("../images/Group-of-Students.jpg")  no-repeat center;
     height: 40vh;
     background-size: 100%;
 }
 
 .bannerContainer{
     width: 100%;
-    height: auto;
     border-radius: 10px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.7);
     color: black;
     position: absolute;
     bottom: 25%;
     right: 0;
     left: 0;
+    overflow: hidden;
+}
+.bannerContentText{
+}
+@media(max-height: 600px){
+    .bannerContentText{
+       display: none;
+    }
+
+    .bannerContainer{
+        height: auto;
+    }
+    .bannerContent{
+        margin: 10px;
+    }
 }
 
 .bannerContent {
     margin: 20px;
-    text-align: center; }
+    text-align: center;
+}
 
-/***** Flag Carosel *****/
+/***** Consultancy Image *****/
+.consultancyImage{
+    width: 100%;
+}
+
+
+/***** Flag Carousel *****/
 .flagSection{
-    background: lightslategray url('../images/earthmap10k.png') no-repeat center;
+    border-top: darkslategrey solid 2px;
+    background: lightslategray url('../images/earthmap.jpg') no-repeat center;
 }
 .bx-wrapper{
     background-color: rgba(255,255,255, 0.5);
@@ -185,3 +207,121 @@
 .bxNextOverrod{
     right: -10%;
 }
+
+
+/**** Study in India / Study Abroad Sections *****/
+#indiaAndAbroad{
+    /*border-top: darkslategrey solid 2px;*/
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.abroadFlags{
+    margin: 10px;
+    border: 1px #4B2E83 solid;
+}
+.studyLocationContainer{
+    text-align: center;
+    background-color: #816DA8;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.indiaAbroadSearchButtonContainer{
+    text-align: right;
+}
+/***** Body links section *****/
+.linkSubsectionsContainer{
+    background-color: white;
+    box-shadow: 1px 1px 1px dimgrey;
+    margin: 10px;
+    border-radius: 3px;
+    text-align: left;
+}
+
+.linkSubsectionTitle{
+    color: #4B2E83;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+hr.linkSubsectionTitle{
+    background-color: orangered;
+    height:5px;
+    margin-top:2px;
+}
+
+.linkTypeHeader{
+    font-weight: bold;
+}
+
+.bodyLinkList ul li{
+    display: inline;
+}
+
+.bodyLinkList > li+li {
+    border-left: 2px solid #696969;
+}
+
+.linksContainer{
+    padding-left: 0;
+}
+
+.linkMoreButton{
+    text-align: right;
+    padding: 5px;
+}
+hr.linkSubsectionBody{
+    background-color: gray;
+    height:1px;
+    margin-top:1px;
+    padding: 0
+}
+
+.articleRow{
+    margin: 8px;
+}
+.articlesAndUpdatesLink{
+    padding: 0;
+    font-size: small;
+}
+
+.topExamLinks{
+    font-size: small;
+    width: 100%
+}
+
+.mbaImageContainer{
+    padding: 0;
+}
+
+.mbaImage{
+    display: block;
+    height:50px;
+    width: auto;
+
+}
+
+.joinUsHeaders{
+    color: #696969;
+    font-weight: bold;
+    font-size: small
+}
+
+/***** Top Queries *****/
+.topQueriesTitle{
+    height:50px;
+    background-color: #4B2E83;
+    color: white;
+    font-size: xx-large;
+    margin-bottom: 75px;
+}
+
+/***** Footer *****/
+.footer{
+    background-color: #000000;
+    height: 100px;
+}
+
+
+

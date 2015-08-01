@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-< lang="en">
+<head>
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
@@ -10,15 +10,36 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-<div class="container-fluid header">
+<div  class="container searchbarSection">
     <div class="row">
-        <div class="col-sm-4 logoContainer"><span class="logoText">LOGO</span></div>
-        <div class="col-sm-4 searchContainer"><span class="fa fa-search fa-4x searchIcon"></span></div>
-        <div class="col-sm-4" >
-            <div class="followUsContainer">
-                <span class="fa fa-facebook-square fa-4x followUsIcon facebook"></span>
-                <span class="fa fa-google-plus-square fa-4x followUsIcon"></span>
-                <span class="fa fa-twitter-square fa-4x followUsIcon"></span>
+        <div class="col-lg-6">
+            <button class="btn btn-primary"><span class="fa fa-sign-in"></span>&nbsp&nbspLogin</button>
+            <button class="btn btn-danger"><span class="fa fa-pencil-square-o"></span>&nbsp&nbspRegister</button>
+        </div>
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-addon"><span class="fa fa-search"></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="header" class="container-fluid header">
+    <div class="row">
+        <div class="col-sm-6 logoContainer"><span class="logoText">LOGO</span></div>
+        <div class="col-sm-6" >
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="followUsContainer">
+                            <span class="fa fa-facebook-square fa-4x followUsIcon facebook"></span>
+                            <span class="fa fa-google-plus-square fa-4x followUsIcon"></span>
+                            <span class="fa fa-twitter-square fa-4x followUsIcon"></span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -33,95 +54,538 @@
     </button>
     <div class="collapse navbar-collapse navHeaderCollapse" style="margin-top: 10px">
         <ul class="nav navbar-nav">
-            <li><a href="#">MBA</a></li>
-            <li><a href="#">Engineering</a></li>
-            <li><a href="#">Study In India</a></li>
-            <li><a href="#">Distance MBA</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Study Abroad <span class="fa fa-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><span class="flag-icon flag-icon-us"></span>&nbsp;&nbsp;&nbsp;USA</a></li>
+                    <li><a href="#"><span class="flag-icon flag-icon-ca"></span>&nbsp;&nbsp;&nbsp;Canada</a></li>
+                    <li><a href="#"><span class="flag-icon flag-icon-nz"></span>&nbsp;&nbsp;&nbsp;New Zealand</a></li>
+                    <li><a href="#"><span class="flag-icon flag-icon-ir"></span>&nbsp;&nbsp;&nbsp;Ireland</a></li>
+                    <li><a href="#"><span class="flag-icon flag-icon-fr"></span>&nbsp;&nbsp;&nbsp;France</a></li>
+                    <li><a href="#"><span class="flag-icon flag-icon-ae"></span>&nbsp;&nbsp;&nbsp;UAE</a></li>
+                    <li><a href="#"><span class="flag-icon flag-icon-au"></span>&nbsp;&nbsp;&nbsp;Australia</a></li>
+                    <li><a href="#"><span class="flag-icon flag-icon-ru"></span>&nbsp;&nbsp;&nbsp;Russia</a></li>
+                    <li><a href="#"><span class="flag-icon flag-icon-ae"></span>&nbsp;&nbsp;&nbsp;UAE</a></li>
+                    <li><a href="#"><span class="flag-icon flag-icon-th"></span>&nbsp;&nbsp;&nbsp;Thailand</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Study In India <span class="fa fa-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Top Art Colleges</a></li>
+                    <li><a href="#">Top Medical Colleges</a></li>
+                    <li><a href="#">Top MBA Colleges</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Exams <span class="fa fa-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">IELTS</a></li>
+                    <li><a href="#">GRE</a></li>
+                    <li><a href="#">TOEFL</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    GRE <span class="fa fa-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Canada</a></li>
+                    <li><a href="#">Germany</a></li>
+                    <li><a href="#">USA</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Distance MBA <span class="fa fa-caret-down"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Distance MBA Colleges</a></li>
+                    <li><a href="#">Top Distance MBA Colleges</a></li>
+                </ul>
+            </li>
             <li><a href="#">Collages</a></li>
-            <li><a href="#">Admissions</a></li>
         </ul>
     </div>
 </nav>
 
-<div id="carousel" class="carousel slide carousel-fade">
-    <ol class="carousel-indicators">
-        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel" data-slide-to="1"></li>
-        <li data-target="#carousel" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="active item">
-            <div class="container-fluid fillContainer">
-                <div class="row fillContainer">
-                    <div class="col-sm-4"></div>
-                    <div class="col-sm-4 fillContainer">
-                        <div class="bannerContainer">
-                            <div class="bannerContent">
-                                <h3>Lorem Ipsum</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <div>
-                                    <button class="btn btn-info btn-lg">More Information!</button>
+<div id="bannerSection">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9">
+                <div id="carousel" class="carousel slide">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="active item">
+                            <div class="container-fluid fillContainer">
+                                <div class="row fillContainer">
+                                    <div class="col-sm-4"></div>
+                                    <div class="col-sm-4 fillContainer">
+                                        <div class="bannerContainer">
+                                            <div class="bannerContent">
+                                                <div class="bannerContentText">
+                                                    <h3>Lorem Ipsum</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                                        ut labore et dolore magna aliqua.
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <button class="btn btn-info btn-lg">More Information!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="container-fluid fillContainer">
+                                <div class="row fillContainer">
+                                    <div class="col-sm-4"></div>
+                                    <div class="col-sm-4 fillContainer">
+                                        <div class="bannerContainer">
+                                            <div class="bannerContent">
+                                                <div class="bannerContentText">
+                                                    <h3>Lorem Ipsum</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                                        ut labore et dolore magna aliqua.
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <button class="btn btn-info btn-lg">More Information!</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="container-fluid fillContainer">
+                                <div class="row fillContainer">
+                                    <div class="col-sm-4"></div>
+                                    <div class="col-sm-4 fillContainer">
+                                        <div class="bannerContainer">
+                                            <div class="bannerContent">
+                                                <div class="bannerContentText">
+                                                    <div class="bannerContentText">
+                                                        <h3>Lorem Ipsum</h3>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                                            ut labore et dolore magna aliqua.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <button class="btn btn-info btn-sm">More Information!</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-4"></div>
+                    <a class="carousel-control left" href="#carousel" data-slide="prev"><span class="fa fa-arrow-circle-left fa-3x"></span></a>
+                    <div><a class="carousel-control right" href="#carousel" data-slide="next"><div style="width: 100%"></div><div style="float: right"><span class="fa fa-arrow-circle-right fa-3x"></span></div></a></div>
                 </div>
             </div>
-        </div>
-        <div class="item">
-            <div class="container-fluid fillContainer">
-                <div class="row fillContainer">
-                    <div class="col-sm-4"></div>
-                    <div class="col-sm-4 fillContainer">
-                        <div class="bannerContainer">
-                            <div class="bannerContent">
-                                <h3>Lorem Ipsum</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <div>
-                                    <button class="btn btn-info btn-lg">More Information!</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4"></div>
+            <div class="col-lg-3 text-center">
+                <div style="overflow: hidden">
+                    <img src="images/college-education.jpg">
                 </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="container-fluid fillContainer">
-                <div class="row fillContainer">
-                    <div class="col-sm-4"></div>
-                    <div class="col-sm-4 fillContainer">
-                        <div class="bannerContainer">
-                            <div class="bannerContent">
-                                <h3>Lorem Ipsum</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <div>
-                                    <button class="btn btn-info btn-lg">More Information!</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4"></div>
-                </div>
+
             </div>
         </div>
     </div>
-    <a class="carousel-control left" href="#carousel" data-slide="prev"><span class="fa fa-arrow-circle-left fa-3x"></span></a>
-    <div><a class="carousel-control right" href="#carousel" data-slide="next"><div style="width: 100%"></div><div style="float: right"><span class="fa fa-arrow-circle-right fa-3x"></span></div></a></div>
 </div>
 
-<div class="container-fluid flagSection">
+<div id="indiaAndAbroad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="bg-info studyLocationContainer">
+                    <h1><span class="flag-icon flag-icon-in abroadFlags "></span>Study In India</h1>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option>Select Subject</option>
+                            <option>Aviation</option>
+                            <option>Banking & Finance</option>
+                            <option>BBA/BBM</option>
+                            <option>BCA/MCA</option>
+                            <option>Biotechnology</option>
+                            <option>Call Center Training</option>
+                            <option>Clinical Research</option>
+                            <option>Commerce</option>
+                            <option>Engineering</option>
+                            <option>Fashion Design</option>
+                            <option>Hardware</option>
+                            <option>Hotel Mangement</option>
+                            <option>Law</option>
+                            <option>MBA</option>
+                            <option>Media</option>
+                            <option>Medicine</option>
+                            <option>Retail</option>
+                            <option>Science</option>
+                            <option>Software</option>
+                            <option>Travel & Tourism</option>
+                        </select>
+                        <br />
+                        <select class="form-control" name="city" id="cities">
+                            <option value="">All Cities</option>
+                            <optgroup label="MajorCities">
+                                <option value="Ahmedabad"> AHMEDABAD</option>
+                                <option value="Bangalore"> BANGALORE</option>
+                                <option value="Chandigarh"> CHANDIGARH</option>
+                                <option value="Chennai"> CHENNAI</option>
+                                <option value="Dadra"> DADRA</option>
+                                <option value="Daman"> DAMAN</option>
+                                <option value="Delhi"> DELHI</option>
+                                <option value="Diu"> DIU</option>
+                                <option value="hyderabad"> HYDERABAD</option>
+                                <option value="Kolkata"> KOLKATA</option>
+                                <option value="Mumbai"> MUMBAI</option>
+                                <option value="Nagar-Haveli"> NAGAR-HAVELI</option>
+                                <option value="Pune"> PUNE</option>
+                                <option value="Secunderabad"> SECUNDERABAD</option>
+                            </optgroup>
+                            <optgroup label="All Mumbai">
+                                <option value="Central-Suburbs"> CENTRAL-SUBURBS</option>
+                                <option value="Navi-Mumbai"> NAVI-MUMBAI</option>
+                                <option value="South-Mumbai"> SOUTH-MUMBAI</option>
+                                <option value="Western-Suburbs"> WESTERN-SUBURBS</option>
+                            </optgroup>
+                            <optgroup label="Delhi/NCR">
+                                <option value="Faridabad"> FARIDABAD</option>
+                                <option value="Ghaziabad"> GHAZIABAD</option>
+                                <option value="Greater-Noida"> GREATER-NOIDA</option>
+                                <option value="Gurgaon"> GURGAON</option>
+                                <option value="Noida"> NOIDA</option>
+                            </optgroup>
+                            <optgroup label="Andaman and Nicobar Islands">
+                                <option value="Andaman-Islands"> ANDAMAN-ISLANDS</option>
+                                <option value="Nicobar-Islands"> NICOBAR-ISLANDS</option>
+                            </optgroup>
+                            <optgroup label="Andhra Pradesh">
+                                <option value="Anantapur"> ANANTAPUR</option>
+                                <option value="Bhimavaram"> BHIMAVARAM</option>
+                                <option value="Guntur"> GUNTUR</option>
+                                <option value="Nalgonda"> NALGONDA</option>
+                                <option value="Nellore"> NELLORE</option>
+                                <option value="Rajahmundry"> RAJAHMUNDRY</option>
+                                <option value="SRIKAKULAM"> SRIKAKULAM</option>
+                                <option value="Tirupati"> TIRUPATI</option>
+                                <option value="Vijayawada"> VIJAYAWADA</option>
+                                <option value="Visakhapatnam"> VISAKHAPATNAM</option>
+                            </optgroup>
+                            <optgroup label="Arunachal Pradesh">
+                                <option value="Itanagar"> ITANAGAR</option>
+                            </optgroup>
+                            <optgroup label="Assam">
+                                <option value="Dibrugarh"> DIBRUGARH</option>
+                                <option value="Dispur"> DISPUR</option>
+                                <option value="Guwahati"> GUWAHATI</option>
+                                <option value="Tezpur"> TEZPUR</option>
+                            </optgroup>
+                            <optgroup label="Bihar">
+                                <option value="Gaya"> GAYA</option>
+                                <option value="Patna"> PATNA</option>
+                                <option value="Rajgir"> RAJGIR</option>
+                                <option value="Vaishali"> VAISHALI</option>
+                            </optgroup>
+                            <optgroup label="Chhattisgarh">
+                                <option value="Raipur"> RAIPUR</option>
+                            </optgroup>
+                            <optgroup label="Goa">
+                                <option value="Canacona"> CANACONA</option>
+                                <option value="Mapusa"> MAPUSA</option>
+                                <option value="Margao"> MARGAO</option>
+                                <option value="Old-Goa"> OLD-GOA</option>
+                                <option value="Panaji"> PANAJI</option>
+                                <option value="Ponda"> PONDA</option>
+                                <option value="Vasco-Da-Gama"> VASCO-DA-GAMA</option>
+                            </optgroup>
+                            <optgroup label="Gujarat">
+                                <option value="Anand"> ANAND</option>
+                                <option value="Baroda"> BARODA</option>
+                                <option value="Bhavnagar"> BHAVNAGAR</option>
+                                <option value="Dwarka"> DWARKA</option>
+                                <option value="Gandhinagar"> GANDHINAGAR</option>
+                                <option value="Nadiad"> NADIAD</option>
+                                <option value="Surat"> SURAT</option>
+                                <option value="Vadodara"> VADODARA</option>
+                                <option value="Vapi"> VAPI</option>
+                            </optgroup>
+                            <optgroup label="Haryana">
+                                <option value="Hisar"> HISAR</option>
+                                <option value="Sonepat"> SONEPAT</option>
+                                <option value="Yamunanagar"> YAMUNANAGAR</option>
+                            </optgroup>
+                            <optgroup label="Himachal Pradesh">
+                                <option value="Dharamsala"> DHARAMSALA</option>
+                                <option value="Kullu"> KULLU</option>
+                                <option value="Manali"> MANALI</option>
+                                <option value="Shimla"> SHIMLA</option>
+                            </optgroup>
+                            <optgroup label="Jammu and Kashmir">
+                                <option value="Gulmarg"> GULMARG</option>
+                                <option value="Jammu"> JAMMU</option>
+                                <option value="Pahalgam"> PAHALGAM</option>
+                                <option value="Srinagar"> SRINAGAR</option>
+                            </optgroup>
+                            <optgroup label="Jharkhand">
+                                <option value="Dhanbad"> DHANBAD</option>
+                                <option value="Jamshedpur"> JAMSHEDPUR</option>
+                                <option value="Ranchi"> RANCHI</option>
+                            </optgroup>
+                            <optgroup label="Karnataka">
+                                <option value="Bagalokot"> BAGALOKOT</option>
+                                <option value="Belgaum"> BELGAUM</option>
+                                <option value="Davangere"> DAVANGERE</option>
+                                <option value="Dharwad"> DHARWAD</option>
+                                <option value="Gulbarga"> GULBARGA</option>
+                                <option value="Hampi"> HAMPI</option>
+                                <option value="Harihar"> HARIHAR</option>
+                                <option value="Hassan"> HASSAN</option>
+                                <option value="Hubli"> HUBLI</option>
+                                <option value="Mangalore"> MANGALORE</option>
+                                <option value="Manipal"> MANIPAL</option>
+                                <option value="Mysore"> MYSORE</option>
+                                <option value="Ramanagara"> RAMANAGARA</option>
+                                <option value="Tumkur"> TUMKUR</option>
+                                <option value="Udupi"> UDUPI</option>
+                            </optgroup>
+                            <optgroup label="Kerala">
+                                <option value="Alleppey"> ALLEPPEY</option>
+                                <option value="Ernakulam"> ERNAKULAM</option>
+                                <option value="kochi"> KOCHI</option>
+                                <option value="Kottayam"> KOTTAYAM</option>
+                                <option value="Kovalam"> KOVALAM</option>
+                                <option value="Kozhikode"> KOZHIKODE</option>
+                                <option value="Pathanamthitta"> PATHANAMTHITTA</option>
+                                <option value="Trichur"> TRICHUR</option>
+                                <option value="Trivandrum"> TRIVANDRUM</option>
+                            </optgroup>
+                            <optgroup label="Lakshadweep">
+                                <option value="Lakshadweep"> LAKSHADWEEP</option>
+                            </optgroup>
+                            <optgroup label="Madhya Pradesh">
+                                <option value="Bhopal"> BHOPAL</option>
+                                <option value="Gwalior"> GWALIOR</option>
+                                <option value="Indore"> INDORE</option>
+                                <option value="Khajuraho"> KHAJURAHO</option>
+                                <option value="Orchha"> ORCHHA</option>
+                                <option value="Ujjain"> UJJAIN</option>
+                            </optgroup>
+                            <optgroup label="Maharashtra">
+                                <option value="Ahmednagar"> AHMEDNAGAR</option>
+                                <option value="Aurangabad"> AURANGABAD</option>
+                                <option value="Kolhapur"> KOLHAPUR</option>
+                                <option value="Nagpur"> NAGPUR</option>
+                                <option value="Nashik"> NASHIK</option>
+                                <option value="Satara"> SATARA</option>
+                                <option value="Solapur"> SOLAPUR</option>
+                            </optgroup>
+                            <optgroup label="Manipur">
+                                <option value="IMPHAL"> IMPHAL</option>
+                            </optgroup>
+                            <optgroup label="Meghalaya">
+                                <option value="Shillong"> SHILLONG</option>
+                            </optgroup>
+                            <optgroup label="Mizoram">
+                                <option value="Aizawl"> AIZAWL</option>
+                            </optgroup>
+                            <optgroup label="Nagaland">
+                                <option value="Kohima"> KOHIMA</option>
+                            </optgroup>
+                            <optgroup label="Orissa">
+                                <option value="Balasore"> BALASORE</option>
+                                <option value="Bhubaneswar"> BHUBANESWAR</option>
+                                <option value="Cuttack"> CUTTACK</option>
+                                <option value="Gunupur"> GUNUPUR</option>
+                                <option value="Konark"> KONARK</option>
+                                <option value="Puri"> PURI</option>
+                                <option value="Sambalpur"> SAMBALPUR</option>
+                            </optgroup>
+                            <optgroup label="Pondicherry">
+                                <option value="Pondicherry"> PONDICHERRY</option>
+                            </optgroup>
+                            <optgroup label="Punjab">
+                                <option value="Amritsar"> AMRITSAR</option>
+                                <option value="Bathinda"> BATHINDA</option>
+                                <option value="Jalandar"> JALANDAR</option>
+                                <option value="Ludhiana"> LUDHIANA</option>
+                                <option value="Mohali"> MOHALI</option>
+                                <option value="Patiala"> PATIALA</option>
+                                <option value="Phagwara"> PHAGWARA</option>
+                                <option value="Sangrur"> SANGRUR</option>
+                            </optgroup>
+                            <optgroup label="Rajasthan">
+                                <option value="Ajmer"> AJMER</option>
+                                <option value="Alwar"> ALWAR</option>
+                                <option value="Banasthali"> BANASTHALI</option>
+                                <option value="Bhilwara"> BHILWARA</option>
+                                <option value="Bikaner"> BIKANER</option>
+                                <option value="Bundi"> BUNDI</option>
+                                <option value="Jaipur"> JAIPUR</option>
+                                <option value="Jaisalmer"> JAISALMER</option>
+                                <option value="Jodhpur"> JODHPUR</option>
+                                <option value="Kota"> KOTA</option>
+                                <option value="Lakshmangarh"> LAKSHMANGARH</option>
+                                <option value="Ranakpur"> RANAKPUR</option>
+                                <option value="Shekhawati"> SHEKHAWATI</option>
+                                <option value="Udaipur"> UDAIPUR</option>
+                            </optgroup>
+                            <optgroup label="Sikkim">
+                                <option value="Gangtok"> GANGTOK</option>
+                            </optgroup>
+                            <optgroup label="Tamil Nadu">
+                                <option value="Coimbatore"> COIMBATORE</option>
+                                <option value="Dindigul"> DINDIGUL</option>
+                                <option value="Erode"> ERODE</option>
+                                <option value="Hosur"> HOSUR</option>
+                                <option value="Kanchipuram"> KANCHIPURAM</option>
+                                <option value="Kanyakumari"> KANYAKUMARI</option>
+                                <option value="Kodaikanal"> KODAIKANAL</option>
+                                <option value="Madurai"> MADURAI</option>
+                                <option value="Nagapattinam"> NAGAPATTINAM</option>
+                                <option value="Ooty"> OOTY</option>
+                                <option value="Rameshwaram"> RAMESHWARAM</option>
+                                <option value="Salem"> SALEM</option>
+                                <option value="Tiruchengode"> TIRUCHENGODE</option>
+                                <option value="Trichy"> TRICHY</option>
+                            </optgroup>
+                            <optgroup label="Telangana">
+                                <option value="ADILABAD"> ADILABAD</option>
+                                <option value="JAGTIAL"> JAGTIAL</option>
+                                <option value="Karimnagar"> KARIMNAGAR</option>
+                                <option value="Khammam"> KHAMMAM</option>
+                                <option value="MAHBUBNAGAR"> MAHBUBNAGAR</option>
+                                <option value="Nizamabad"> NIZAMABAD</option>
+                                <option value="Ramagundam"> RAMAGUNDAM</option>
+                                <option value="Ranga-Reddy"> RANGA-REDDY</option>
+                                <option value="Warangal"> WARANGAL</option>
+                            </optgroup>
+                            <optgroup label="Tripura">
+                                <option value="Agartala"> AGARTALA</option>
+                                <option value="Tripura-W"> TRIPURA-W</option>
+                            </optgroup>
+                            <optgroup label="Uttar Pradesh">
+                                <option value="Agra"> AGRA</option>
+                                <option value="Aligarh"> ALIGARH</option>
+                                <option value="Allahabad"> ALLAHABAD</option>
+                                <option value="Bareilly"> BAREILLY</option>
+                                <option value="Bijnor"> BIJNOR</option>
+                                <option value="Bulandshahar"> BULANDSHAHAR</option>
+                                <option value="Gorakhpur"> GORAKHPUR</option>
+                                <option value="Jaunpur"> JAUNPUR</option>
+                                <option value="Kanpur"> KANPUR</option>
+                                <option value="Lucknow"> LUCKNOW</option>
+                                <option value="Mathura"> MATHURA</option>
+                                <option value="Meerut"> MEERUT</option>
+                                <option value="Mirzapur"> MIRZAPUR</option>
+                                <option value="Modinagar"> MODINAGAR</option>
+                                <option value="Muzaffarnagar"> MUZAFFARNAGAR</option>
+                                <option value="Pantnagar"> PANTNAGAR</option>
+                                <option value="Varanasi"> VARANASI</option>
+                            </optgroup>
+                            <optgroup label="Uttarakhand">
+                                <option value="Dehradun"> DEHRADUN</option>
+                                <option value="Haridwar"> HARIDWAR</option>
+                                <option value="Nainital"> NAINITAL</option>
+                                <option value="Rishikesh"> RISHIKESH</option>
+                                <option value="Roorkee"> ROORKEE</option>
+                            </optgroup>
+                            <optgroup label="West Bengal">
+                                <option value="Berhampur"> BERHAMPUR</option>
+                                <option value="Burdwan"> BURDWAN</option>
+                                <option value="Darjeeling"> DARJEELING</option>
+                                <option value="Durgapur"> DURGAPUR</option>
+                                <option value="Murshidabad"> MURSHIDABAD</option>
+                            </optgroup>
+                        </select>
+                        <br />
+                        <div class="indiaAbroadSearchButtonContainer">
+                            <button type= submit class="btn btn-info btn-lg"><span class="fa fa-search"></span>&nbsp&nbspSearch</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-info studyLocationContainer">
+                    <h1><img height="38" class="abroadFlags" src="images/earth-ico.png"/>Study Abroad</h1>
+
+                </div>
+                <form>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option>Select Subject</option>
+                            <option>Aviation</option>
+                            <option>Banking & Finance</option>
+                            <option>BBA/BBM</option>
+                            <option>BCA/MCA</option>
+                            <option>Biotechnology</option>
+                            <option>Call Center Training</option>
+                            <option>Clinical Research</option>
+                            <option>Commerce</option>
+                            <option>Engineering</option>
+                            <option>Fashion Design</option>
+                            <option>Hardware</option>
+                            <option>Hotel Mangement</option>
+                            <option>Law</option>
+                            <option>MBA</option>
+                            <option>Media</option>
+                            <option>Medicine</option>
+                            <option>Retail</option>
+                            <option>Science</option>
+                            <option>Software</option>
+                            <option>Travel & Tourism</option>
+                        </select>
+                        <br />
+                        <select class="form-control">
+                            <option>Australia</option>
+                            <option>Canada</option>
+                            <option>Germany</option>
+                            <option>Holland</option>
+                            <option>Ireland</option>
+                            <option>Malaysia</option>
+                            <option>New Zealand</option>
+                            <option>Poland</option>
+                            <option>Russia</option>
+                            <option>Singapore</option>
+                            <option>Switzerland</option>
+                            <option>Thailand</option>
+                            <option>UK</option>
+                            <option>USA</option>
+                            <option>UAE</option>
+                        </select>
+                        <br />
+                        <div class="indiaAbroadSearchButtonContainer">
+                            <button type= submit class="btn btn-info btn-lg"><span class="fa fa-search"></span>&nbsp&nbspSearch</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="flags" class="container-fluid flagSection">
     <div class="row">
         <div class="col-sm-12">
             <ul class="bxslider flagSliderContainer">
@@ -138,6 +602,416 @@
     </div>
 </div>
 
+<div id="links" class="container-fluid" style="background: lightgrey url('images/StudentsonCampus.jpg') no-repeat center fixed;">
+    <div class="container" style="text-align: center; padding-top: 50px; padding-bottom: 50px;">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 linkSubsectionsContainer">
+                            <h4><span class="linkSubsectionTitle">Explore Popular Courses</span></h4>
+                            <hr class="linkSubsectionTitle">
+                            <h5><span class="linkTypeHeader">MBA</span></h5>
+                            <div class=" container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 linksContainer">
+                                        <ul class="list-inline">
+                                            <li><a href="#">Finance</a></li>
+                                            <li><a href="#">Management</a></li>
+                                            <li><a href="#">HR</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 linkMoreButton">
+                                        <button class="btn btn-info btn-sm">More&nbsp&nbsp<span class="fa fa-chevron-right"></span></button>
+                                    </div>
+                                </div>
+                                <hr class="linkSubsectionBody">
+                            </div>
+
+                            <h5><span class="linkTypeHeader">Engineering</span></h5>
+                            <div class=" container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 linksContainer">
+                                        <ul class="list-inline">
+                                            <li><a href="#">Computer Science</a></li>
+                                            <li><a href="#">ECE</a></li>
+                                            <li><a href="#">ECEE</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 linkMoreButton">
+                                        <button class="btn btn-info btn-sm">More&nbsp&nbsp<span class="fa fa-chevron-right"></span></button>
+                                    </div>
+                                </div>
+                                <hr class="linkSubsectionBody">
+                            </div>
+
+                            <h5><span class="linkTypeHeader">Science</span></h5>
+                            <div class=" container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 linksContainer">
+                                        <ul class="list-inline">
+                                            <li><a href="#">Computer Science</a></li>
+                                            <li><a href="#">MPC</a></li>
+                                            <li><a href="#">Biotech</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 linkMoreButton">
+                                        <button class="btn btn-info btn-sm">More&nbsp&nbsp<span class="fa fa-chevron-right"></span></button>
+                                    </div>
+                                </div>
+                                <hr class="linkSubsectionBody">
+                            </div>
+
+                            <h5><span class="linkTypeHeader">Arts and Humanities</span></h5>
+                            <div class=" container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 linksContainer">
+                                        <ul class="list-inline">
+                                            <li><a href="#">English</a></li>
+                                            <li><a href="#">Economics</a></li>
+                                            <li><a href="#">Psychology</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 linkMoreButton">
+                                        <button class="btn btn-info btn-sm">More&nbsp&nbsp<span class="fa fa-chevron-right"></span></button>
+                                    </div>
+                                </div>
+                                <hr class="linkSubsectionBody">
+                            </div>
+
+                            <h5><span class="linkTypeHeader">Medical</span></h5>
+                            <div class=" container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 linksContainer">
+                                        <ul class="list-inline">
+                                            <li><a href="#">Cardiology</a></li>
+                                            <li><a href="#">Gynaecology</a></li>
+                                            <li><a href="#">Dental Studies</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 linkMoreButton">
+                                        <button class="btn btn-info btn-sm">More&nbsp&nbsp<span class="fa fa-chevron-right"></span></button>
+                                    </div>
+                                </div>
+                                <hr class="linkSubsectionBody">
+                            </div>
+
+                            <h5><span class="linkTypeHeader">Commerce</span></h5>
+                            <div class=" container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 linksContainer">
+                                        <ul class="list-inline">
+                                            <li><a href="#">Accounting</a></li>
+                                            <li><a href="#">Banking</a></li>
+                                            <li><a href="#">CA</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 linkMoreButton">
+                                        <button class="btn btn-info btn-sm">More&nbsp&nbsp<span class="fa fa-chevron-right"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 linkSubsectionsContainer">
+                            <h4><span class="linkSubsectionTitle">Study Abroad Articles and Updates</span></h4>
+                            <hr class="linkSubsectionTitle">
+                            <div class="container-fluid">
+                                <div class="row articleRow">
+                                    <div class="col-md-3"><img src="http://lorempixel.com/output/transport-q-c-50-50-6.jpg"></div>
+                                    <div class="col-md-9 articlesAndUpdatesLink"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore .</a></div>
+                                </div>
+                                <div class="row articleRow">
+                                    <div class="col-md-3"><img src="http://lorempixel.com/output/transport-q-c-50-50-9.jpg"></div>
+                                    <div class="col-md-9 articlesAndUpdatesLink"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore .</a></div>
+                                </div>
+                                <div class="row articleRow">
+                                    <div class="col-md-3"><img src="http://lorempixel.com/output/nightlife-q-c-50-50-2.jpg"></div>
+                                    <div class="col-md-9 articlesAndUpdatesLink"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore .</a></div>
+                                </div>
+                                <div class="row articleRow">
+                                    <div class="col-md-3"><img src="http://lorempixel.com/output/technics-q-c-50-50-10.jpg"></div>
+                                    <div class="col-md-9 articlesAndUpdatesLink"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore .</a></div>
+                                </div>
+                                <div class="row articleRow">
+                                    <div class="col-md-3"><img src="http://lorempixel.com/output/technics-q-c-50-50-7.jpg"></div>
+                                    <div class="col-md-9 articlesAndUpdatesLink"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit, sed do eiusmod tempor incididunt ut labore .</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 linkSubsectionsContainer">
+                            <h4><span class="linkSubsectionTitle">Join Us</span></h4>
+                            <hr class="linkSubsectionTitle">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" placeholder="Mobile #">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" placeholder="Mobile #">
+                                </div>
+
+                                <span class="joinUsHeaders">Education Details</span>
+                                <div class="form-group">
+                                    <select name="currentDegree" id="currentDegree" class="form-control">
+                                        <option value="">Highest Qualification</option>
+                                        <option value="10th">10th</option>
+                                        <option value="11th /PUC ">11th /PUC</option>
+                                        <option value="12th">12th</option>
+                                        <option value="B.A">B.A.</option>
+                                        <option value="B.Arch">B.Arch</option>
+                                        <option value="B.B.A">B.B.A</option>
+                                        <option value="B.Com">B.Com</option>
+                                        <option value="B.Ed">B.Ed</option>
+                                        <option value="B.Pharm">B.Pharm</option>
+                                        <option value="B.P.Th.">Bachelor of Physiotherapy</option>
+                                        <option value="B.Sc">B.Sc</option>
+                                        <option value="B.Tech/B.E.">B.Tech/B.E.</option>
+                                        <option value="BCA">BCA</option>
+                                        <option value="BDS">BDS</option>
+                                        <option value="BHM">BHM</option>
+                                        <option value="B.M.S.">B.M.S.</option>
+                                        <option value="BBM">BBM</option>
+                                        <option value="BVSc">BVSc</option>
+                                        <option value="B.T.M.">Bachelor tourism and managment</option>
+                                        <option value="B.Cs.">Bachelor of Computer Science</option>
+                                        <option value="CA">CA</option>
+                                        <option value="DDS">Doctor of Dental science</option>
+                                        <option value="Diploma">Diploma</option>
+                                        <option value="Integrated PG">Integrated PG</option>
+                                        <option value="LLB">LLB</option>
+                                        <option value="LLM">LLM</option>
+                                        <option value="M.A">M.A</option>
+                                        <option value="M.Arch">M.Arch</option>
+                                        <option value="M.Com">M.Com</option>
+                                        <option value="M.Ed">M.Ed</option>
+                                        <option value="M.Pharm">M.Pharm</option>
+                                        <option value="M.Sc">M.Sc</option>
+                                        <option value="M.Tech/M.E.">M.Tech/M.E.</option>
+                                        <option value="MBA">MBA</option>
+                                        <option value="MBBS">MBBS</option>
+                                        <option value="MCA">MCA</option>
+                                        <option value="MCM">MCM</option>
+                                        <option value="M.P.Th.">Master of Physiotherapy</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MVSc">MVSc</option>
+                                        <option value="PG Diploma">PG Diploma</option>
+                                        <option value="PGDBA">PGDBA</option>
+                                        <option value="PGDM">PGDM</option></select>
+                                </div>
+                                <div class="form-group">
+                                    <select name="yearOfGraduation" id="yearOfGraduation" class="form-control"><option value="">Year of Passing</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1999">1999</option>
+                                        <option value="2000">2000</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option></select>
+                                </div>
+
+                                <span class="joinUsHeaders">Education Details</span>
+                                <div class="form-group">
+                                    <select name="educationinterest" id="educationinterest" class="form-control">
+                                        <option value="">Education Interest *</option>
+                                        <option value="Animation and Multimedia">Animation and Multimedia</option>
+                                        <option value="Arts and Humanities">Arts and Humanities</option>
+                                        <option value="Aviation">Aviation</option>
+                                        <option value="BBA/BBM">BBA/BBM</option>
+                                        <option value="BCA/MCA">BCA/MCA</option>
+                                        <option value="Commerce and BFSI">Commerce and BFSI</option>
+                                        <option value="Distance MBA">Distance MBA</option>
+                                        <option value="Engineering">Engineering</option>
+                                        <option value="Executive Education">Executive Education</option>
+                                        <option value="Fashion Design">Fashion Design</option>
+                                        <option value="Hardware and Networking">Hardware and Networking</option>
+                                        <option value="Hospitality &amp; Hotel Management">Hospitality &amp; Hotel Management</option>
+                                        <option value="Software Courses">IT Courses- Software</option>
+                                        <option value="Law">Law</option>
+                                        <option value="mba">MBA</option>
+                                        <option value="Media, Films , Mass Communication">Media, Films , Mass Communication</option>
+                                        <option value="Medicine and Healthcare">Medicine and Healthcare</option>
+                                        <option value="Retail">Retail</option>
+                                        <option value="Science">Science</option>
+                                        <option value="Travel and Tourism">Travel and Tourism</option>
+                                        <option value="Other Courses">Other Courses</option></select>
+                                </div>
+                                <div class="form-group" style="text-align: right">
+                                    <button type="submit" class="btn btn-info"><span class="fa fa-plus"></span>&nbsp&nbspJoin</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 linkSubsectionsContainer">
+                            <h4><span class="linkSubsectionTitle">FAQs</span></h4>
+                            <hr class="linkSubsectionTitle">
+                            <div class="container-fluid">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 linkSubsectionsContainer">
+                            <h4><span class="linkSubsectionTitle">Top Exams</span></h4>
+                            <hr class="linkSubsectionTitle">
+                            <div>
+                                <h5><span class="linkTypeHeader">MBA</span></h5>
+                                <div class="col-md-8 linksContainer topExamLinks">
+                                    <ul class="list-inline">
+                                        <li><a href="#">CAT</a></li>
+                                        <li><a href="#">MAT</a></li>
+                                        <li><a href="#">SNAP</a></li>
+                                        <li><a href="#">XAT</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br />
+                            <div>
+                                <h5><span class="linkTypeHeader">Engineering</span></h5>
+                                <div class="col-md-8 linksContainer topExamLinks">
+                                    <ul class="list-inline topExamLinks">
+                                        <li><a href="#">JEE Advanced</a></li>
+                                        <li><a href="#">JEE Main</a></li>
+                                        <li><a href="#">BITSTAT</a></li>
+                                        <li><a href="#">GATE</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br />
+                            <div>
+                                <h5><span class="linkTypeHeader">LAW</span></h5>
+                                <div class="col-md-8 linksContainer topExamLinks">
+                                    <ul class="list-inline">
+                                        <li><a href="#">CLAT</a></li>
+                                        <li><a href="#">LAWCET</a></li>
+                                        <li><a href="#">AILET</a></li>
+                                        <li><a href="#">ILSAT</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br />
+                            <div>
+                                <h5><span class="linkTypeHeader">Medical</span></h5>
+                                <div class="col-md-8 linksContainer topExamLinks">
+                                    <ul class="list-inline">
+                                        <li><a href="#">AIIMS</a></li>
+                                        <li><a href="#">AIPMT</a></li>
+                                        <li><a href="#">AFMC</a></li>
+                                        <li><a href="#">COMDEK</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br />
+                            <div>
+                                <h5><span class="linkTypeHeader">Board</span></h5>
+                                <div class="col-md-8 linksContainer topExamLinks">
+                                    <ul class="list-inline">
+                                        <li><a href="#">CBSE</a></li>
+                                        <li><a href="#">ICSE</a></li>
+                                        <li><a href="#">APBSE</a></li>
+                                        <li><a href="#">PUE</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br />
+                            <div>
+                                <h5><span class="linkTypeHeader">Study Abroad</span></h5>
+                                <div class="col-md-8 linksContainer topExamLinks">
+                                    <ul class="list-inline">
+                                        <li><a href="#">GRE</a></li>
+                                        <li><a href="#">TOEFL</a></li>
+                                        <li><a href="#">IELTS</a></li>
+                                        <li><a href="#">GMAT</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 linkSubsectionsContainer">
+                            <h4><span class="linkSubsectionTitle">Distance MBA Admission Notice</span></h4>
+                            <hr class="linkSubsectionTitle">
+                            <div class="container-fluid">
+                                <div class="row articleRow">
+                                    <div class="col-md-3 mbaImageContainer"><img class="mbaImage" src="images/mba1.jpg"></div>
+                                    <div class="col-md-9 articlesAndUpdatesLink"><a href="#">SPMVV DDE, Tirupati Invites Applications for Distance MBA Program 2015</a></div>
+                                </div>
+                                <div class="row articleRow">
+                                    <div class="col-md-3 mbaImageContainer"><img class="mbaImage" src="images/mba2.jpg"></div>
+                                    <div class="col-md-9 articlesAndUpdatesLink"><a href="#">Osmania University CDE Invites Applications for Distance MBA Program 2015.</a></div>
+                                </div>
+                                <div class="row articleRow">
+                                    <div class="col-md-3 mbaImageContainer"><img class="mbaImage" src="images/mba3.jpg"></div>
+                                    <div class="col-md-9 articlesAndUpdatesLink"><a href="#">Anna University CDE Invites Applications for Distance MBA Programs 2015</a></div>
+                                </div>
+                                <div class="row articleRow">
+                                    <div class="col-md-3 mbaImageContainer"><img class="mbaImage" src="images/mba4.jpg"></div>
+                                    <div class="col-md-9 articlesAndUpdatesLink"><a href="#">Pondicherry University DDE Invites Applications for Distance MBA Programs 2015</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="topQueries" class="container">
+    <div class="row">
+        <div class="col-lg-4" style="text-align: center"></div>
+        <div class="col-lg-4" style="text-align: center">
+            <div class="topQueriesTitle">Top Queries</div>
+        </div>
+        <div class="col-lg-4" style="text-align: center"></div>
+    </div>
+
+</div>
+
+<div id="footer" class="footer">
+
+</div>
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/bootstrap/js/collapse.js"></script>
