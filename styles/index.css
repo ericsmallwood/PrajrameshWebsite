@@ -180,7 +180,8 @@ html, body{
 
 /***** Consultancy Image *****/
 .consultancyImage{
-    width: 100%;
+    height: 40vh;
+    background: url('../images/college-education.jpg') center no-repeat;
 }
 
 
