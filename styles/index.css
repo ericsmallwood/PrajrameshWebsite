@@ -339,6 +339,17 @@ hr.linkSubsectionBody{
     font-size: small
 }
 
+#articlesSliderContainer >  .bx-wrapper > .bx-viewport {
+
+}
+
+.articleImage{
+    float: left;
+    margin-right: 2px;
+}
+
+
+
 /***** Top Queries *****/
 .topQueriesTitle{
     height:50px;

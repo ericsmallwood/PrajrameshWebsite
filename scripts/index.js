@@ -25,6 +25,16 @@ $('#flagsSlider').bxSlider({
     pause: 2000
 
 });
+$('#articleSlider').bxSlider({
+    minSlides: 3,
+    maxSlides: 3,
+    mode: 'vertical',
+    moveSlides: 1,
+    speed: 200,
+    auto: true,
+    pause: 2000
+
+});
 
 $('.bx-prev').css("left", "-10%");
 $('.bx-next').css("right", "-10%");
