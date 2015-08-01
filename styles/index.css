@@ -5,7 +5,6 @@ html, body{
 
 .mainSection{
     padding-top: 50px;
-    padding-bottom: 50px;
     overflow: hidden;
 }
 
@@ -165,8 +164,9 @@ html, body{
     left: 0;
     overflow: hidden;
 }
-.bannerContentText{
-}
+
+
+
 @media(max-height: 600px){
     .bannerContentText{
        display: none;
@@ -191,8 +191,21 @@ html, body{
     background: url('../images/college-education.jpg') center no-repeat;
 }
 
+/***** Ads Section *****/
+#adsSection{
+    background: url('../images/simple-gray-background-ardrgtbo.jpg') no-repeat center fixed;
+    border-top: 1px slategray solid;
+}
+
+
 /***** Ads Across *****/
 .adAcrossImg{
+    border: 1px #816DA8 solid;
+}
+
+/***** Ads Right *****/
+.adsRightImg{
+    margin-top: 2px;
     border: 1px #816DA8 solid;
 }
 
