@@ -7,10 +7,6 @@
     padding:20px;
 }
 
-.hide-section{
-    display: none;
-}
-
 /***** Header Section *****/
 .header{
     width: 100%;
@@ -47,15 +43,6 @@
     padding: 10px;
 }
 
-.searchContainer{
-    text-align:center;
-
-}
-.searchIcon{
-    padding: 10px;
-    cursor: pointer;
-}
-
 .loginRegisterContainer{
     text-align: right;
     font-size: medium;
@@ -63,12 +50,7 @@
     padding-right: 25px;
 }
 
-@media(max-width: 900px){
-    .followUsIcon{
-        font-size: medium;
-        padding: 2px;
-    }
-}
+
 
 /***** Navigation Section *****/
 .navSection{
