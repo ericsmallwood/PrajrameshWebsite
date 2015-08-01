@@ -1,4 +1,7 @@
 /***** General *****/
+html, body{
+    height: 100%
+}
 .fillContainer{
     height: 100%;
 }
@@ -175,6 +178,12 @@
     text-align: center;
 }
 
+/***** Consultancy Image *****/
+.consultancyImage{
+    width: 100%;
+}
+
+
 /***** Flag Carousel *****/
 .flagSection{
     border-top: darkslategrey solid 2px;
@@ -198,6 +207,7 @@
 .bxNextOverrod{
     right: -10%;
 }
+
 
 /**** Study in India / Study Abroad Sections *****/
 #indiaAndAbroad{
