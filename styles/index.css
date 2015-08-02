@@ -421,6 +421,10 @@ hr.linkSubsectionBody{
     text-decoration: underline;
 }
 
+.jstree-default li > a:visited{
+    background-color: black;
+}
+
 .footer{
     background-color: #4B2E83;
     color: white;
@@ -438,6 +442,4 @@ hr.linkSubsectionBody{
 .footerLinks a{
     color: #ffffff;
 }
-
-
 
