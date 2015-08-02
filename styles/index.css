@@ -38,6 +38,12 @@ html, body{
     .collapse.in{
         display:block !important;
     }
+
+    .navbar-responsive-full-width{
+        width: 100%;
+        text-align: left;
+    }
+
 }
 
 .mainSection{
@@ -136,8 +142,7 @@ html, body{
 .navbar .nav > li+li { border-left: 2px solid #696969 }
 
 .navbar-responsive-full-width{
-    width: 100%;
-    text-align: left;
+
 }
 
 /***** Image Carosel *****/
