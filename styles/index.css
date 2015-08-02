@@ -3,7 +3,7 @@ html, body{
     height: 100%
 }
 
-/*@media (max-width: 1200px) {
+@media screen and (max-device-width: 768px){
     .navbar-header {
         float: none;
     }
@@ -38,7 +38,7 @@ html, body{
     .collapse.in{
         display:block !important;
     }
-}*/
+}
 
 .mainSection{
     padding-top: 50px;
@@ -134,6 +134,11 @@ html, body{
     }
 }
 .navbar .nav > li+li { border-left: 2px solid #696969 }
+
+.navbar-responsive-full-width{
+    width: 100%;
+    text-align: left;
+}
 
 /***** Image Carosel *****/
 .carousel-fade .carousel-inner .item {
