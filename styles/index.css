@@ -367,6 +367,7 @@ hr.linkSubsectionBody{
 .articlesAndUpdatesLink{
     padding: 0;
     font-size: small;
+    margin-left: 10px;
 }
 
 .topExamLinks{
